@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E342191FA39AE4005D3740 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E342181FA39AE4005D3740 /* Note.swift */; };
+		00E3421C1FA3A2DA005D3740 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3421B1FA3A2DA005D3740 /* Note.swift */; };
 		D03ACD43CBF966B1E344A647 /* Pods_Reactant_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4614ABC6346420924414EB32 /* Pods_Reactant_Notes.framework */; };
 		OBJ_37 /* GeneratedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* GeneratedUI.swift */; };
 		OBJ_38 /* MainRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* MainRootView.swift */; };
@@ -22,7 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00E342181FA39AE4005D3740 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Note.swift; path = ../../../../Reactant/Tests/Core/Component/Note.swift; sourceTree = "<group>"; };
+		00E3421B1FA3A2DA005D3740 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		1621E97C5ABE8F430218D12D /* Pods-Reactant-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reactant-Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reactant-Notes/Pods-Reactant-Notes.release.xcconfig"; sourceTree = "<group>"; };
 		4614ABC6346420924414EB32 /* Pods_Reactant_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reactant_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66B0BFBB9AC9D786CD93FDD /* Pods-Reactant-Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reactant-Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reactant-Notes/Pods-Reactant-Notes.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,6 +61,21 @@
 			path = NewNote;
 			sourceTree = "<group>";
 		};
+		00E3421A1FA3A2CE005D3740 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00E3421B1FA3A2DA005D3740 /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00E3421D1FA3A2DF005D3740 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		4CDB935950DDC63445F29873 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_12 /* Components */,
-				OBJ_17 /* Models */,
-				OBJ_18 /* Services */,
+				00E3421D1FA3A2DF005D3740 /* Services */,
+				00E3421A1FA3A2CE005D3740 /* Models */,
 				OBJ_19 /* Styles */,
 				OBJ_21 /* Wireframes */,
 				OBJ_23 /* AppDelegate.swift */,
@@ -110,21 +125,6 @@
 				OBJ_15 /* MainRootView.ui.xml */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		OBJ_17 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				00E342181FA39AE4005D3740 /* Note.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		OBJ_18 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		OBJ_19 /* Styles */ = {
@@ -340,8 +340,8 @@
 				OBJ_37 /* GeneratedUI.swift in Sources */,
 				OBJ_38 /* MainRootView.swift in Sources */,
 				OBJ_39 /* MainController.swift in Sources */,
-				00E342191FA39AE4005D3740 /* Note.swift in Sources */,
 				OBJ_40 /* MainWireframe.swift in Sources */,
+				00E3421C1FA3A2DA005D3740 /* Note.swift in Sources */,
 				OBJ_41 /* AppDelegate.swift in Sources */,
 				OBJ_42 /* DependencyModule.swift in Sources */,
 				OBJ_43 /* ApplicationModule.swift in Sources */,
