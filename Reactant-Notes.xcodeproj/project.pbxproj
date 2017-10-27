@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E342191FA39AE4005D3740 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E342181FA39AE4005D3740 /* Note.swift */; };
+		D03ACD43CBF966B1E344A647 /* Pods_Reactant_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4614ABC6346420924414EB32 /* Pods_Reactant_Notes.framework */; };
+		OBJ_37 /* GeneratedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* GeneratedUI.swift */; };
+		OBJ_38 /* MainRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* MainRootView.swift */; };
+		OBJ_39 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* MainController.swift */; };
+		OBJ_40 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* MainWireframe.swift */; };
+		OBJ_41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* AppDelegate.swift */; };
+		OBJ_42 /* DependencyModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* DependencyModule.swift */; };
+		OBJ_43 /* ApplicationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* ApplicationModule.swift */; };
+		OBJ_45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Assets.xcassets */; };
+		OBJ_46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* LaunchScreen.storyboard */; };
+		OBJ_47 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00E342181FA39AE4005D3740 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Note.swift; path = ../../../../Reactant/Tests/Core/Component/Note.swift; sourceTree = "<group>"; };
+		1621E97C5ABE8F430218D12D /* Pods-Reactant-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reactant-Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reactant-Notes/Pods-Reactant-Notes.release.xcconfig"; sourceTree = "<group>"; };
+		4614ABC6346420924414EB32 /* Pods_Reactant_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reactant_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A66B0BFBB9AC9D786CD93FDD /* Pods-Reactant-Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reactant-Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reactant-Notes/Pods-Reactant-Notes.debug.xcconfig"; sourceTree = "<group>"; };
+		OBJ_10 /* GeneratedUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedUI.swift; sourceTree = "<group>"; };
+		OBJ_14 /* MainRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRootView.swift; sourceTree = "<group>"; };
+		OBJ_15 /* MainRootView.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MainRootView.ui.xml; sourceTree = "<group>"; };
+		OBJ_16 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		OBJ_20 /* General.styles.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = General.styles.xml; sourceTree = "<group>"; };
+		OBJ_22 /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
+		OBJ_23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		OBJ_24 /* DependencyModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyModule.swift; sourceTree = "<group>"; };
+		OBJ_25 /* ApplicationModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationModule.swift; sourceTree = "<group>"; };
+		OBJ_27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		OBJ_28 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		OBJ_29 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		OBJ_30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		OBJ_7 /* Reactant_Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Reactant_Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				D03ACD43CBF966B1E344A647 /* Pods_Reactant_Notes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E342171FA39465005D3740 /* NewNote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NewNote;
+			sourceTree = "<group>";
+		};
+		4CDB935950DDC63445F29873 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4614ABC6346420924414EB32 /* Pods_Reactant_Notes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A43E65950B1B58DF8AC5423F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A66B0BFBB9AC9D786CD93FDD /* Pods-Reactant-Notes.debug.xcconfig */,
+				1621E97C5ABE8F430218D12D /* Pods-Reactant-Notes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		OBJ_11 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* Components */,
+				OBJ_17 /* Models */,
+				OBJ_18 /* Services */,
+				OBJ_19 /* Styles */,
+				OBJ_21 /* Wireframes */,
+				OBJ_23 /* AppDelegate.swift */,
+				OBJ_24 /* DependencyModule.swift */,
+				OBJ_25 /* ApplicationModule.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		OBJ_12 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_13 /* Main */,
+				00E342171FA39465005D3740 /* NewNote */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		OBJ_13 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* MainController.swift */,
+				OBJ_14 /* MainRootView.swift */,
+				OBJ_15 /* MainRootView.ui.xml */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		OBJ_17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00E342181FA39AE4005D3740 /* Note.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_18 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		OBJ_19 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* General.styles.xml */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		OBJ_21 /* Wireframes */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_22 /* MainWireframe.swift */,
+			);
+			path = Wireframes;
+			sourceTree = "<group>";
+		};
+		OBJ_26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_27 /* Assets.xcassets */,
+				OBJ_28 /* LaunchScreen.storyboard */,
+				OBJ_29 /* Localizable.strings */,
+				OBJ_30 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Products */,
+				OBJ_8 /* Application */,
+				A43E65950B1B58DF8AC5423F /* Pods */,
+				4CDB935950DDC63445F29873 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_7 /* Reactant_Notes.app */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Generated */,
+				OBJ_11 /* Sources */,
+				OBJ_26 /* Resources */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		OBJ_9 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* GeneratedUI.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		OBJ_31 /* Reactant-Notes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_32 /* Build configuration list for PBXNativeTarget "Reactant-Notes" */;
+			buildPhases = (
+				92F0F79FDF62F3F79851509A /* [CP] Check Pods Manifest.lock */,
+				OBJ_35 /* Run ReactantUI */,
+				OBJ_36 /* Sources */,
+				OBJ_44 /* Resources */,
+				OBJ_48 /* Frameworks */,
+				13291F162860A23D28DF0053 /* [CP] Embed Pods Frameworks */,
+				AA58E38C816AFE268751CCFB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Reactant-Notes";
+			productName = Reactant_Notes;
+			productReference = OBJ_7 /* Reactant_Notes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Reactant-Notes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				OBJ_31 /* Reactant-Notes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		OBJ_44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_45 /* Assets.xcassets in Resources */,
+				OBJ_46 /* LaunchScreen.storyboard in Resources */,
+				OBJ_47 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13291F162860A23D28DF0053 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Reactant-Notes/Pods-Reactant-Notes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Reactant/Reactant.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactantLiveUI/ReactantLiveUI.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reactant.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactantLiveUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reactant-Notes/Pods-Reactant-Notes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92F0F79FDF62F3F79851509A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Reactant-Notes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA58E38C816AFE268751CCFB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Reactant-Notes/Pods-Reactant-Notes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		OBJ_35 /* Run ReactantUI */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			name = "Run ReactantUI";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pushd \"$PODS_ROOT/ReactantUI\"\nenv -i HOME=\"$HOME\" PATH=\"$PATH\" swift build\npopd\ncd \"$SRCROOT/Application/Sources\"\n\"$PODS_ROOT/ReactantUI/.build/debug/reactant-ui\" --enable-live > \"$SRCROOT/Application/Generated/GeneratedUI.swift\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_37 /* GeneratedUI.swift in Sources */,
+				OBJ_38 /* MainRootView.swift in Sources */,
+				OBJ_39 /* MainController.swift in Sources */,
+				00E342191FA39AE4005D3740 /* Note.swift in Sources */,
+				OBJ_40 /* MainWireframe.swift in Sources */,
+				OBJ_41 /* AppDelegate.swift in Sources */,
+				OBJ_42 /* DependencyModule.swift in Sources */,
+				OBJ_43 /* ApplicationModule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A66B0BFBB9AC9D786CD93FDD /* Pods-Reactant-Notes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_TESTABILITY = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Application/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Brightify.Reactant-Notes";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = "Reactant-Notes";
+			};
+			name = Debug;
+		};
+		OBJ_34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1621E97C5ABE8F430218D12D /* Pods-Reactant-Notes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_TESTABILITY = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Application/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Brightify.Reactant-Notes";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = "Reactant-Notes";
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_2 /* Build configuration list for PBXProject "Reactant-Notes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_32 /* Build configuration list for PBXNativeTarget "Reactant-Notes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_33 /* Debug */,
+				OBJ_34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
