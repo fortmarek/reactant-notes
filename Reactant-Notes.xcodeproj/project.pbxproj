@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00610CDF1FAB1BE800291938 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00610CDE1FAB1BE800291938 /* NoteCell.swift */; };
+		0062516C1FABB18A000F6313 /* MainRootView.ui.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0062516B1FABB18A000F6313 /* MainRootView.ui.xml */; };
 		00E3421C1FA3A2DA005D3740 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3421B1FA3A2DA005D3740 /* Note.swift */; };
 		D03ACD43CBF966B1E344A647 /* Pods_Reactant_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4614ABC6346420924414EB32 /* Pods_Reactant_Notes.framework */; };
 		OBJ_37 /* GeneratedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* GeneratedUI.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		00610CDE1FAB1BE800291938 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		0062516B1FABB18A000F6313 /* MainRootView.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MainRootView.ui.xml; sourceTree = "<group>"; };
 		00E3421B1FA3A2DA005D3740 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		1621E97C5ABE8F430218D12D /* Pods-Reactant-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reactant-Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reactant-Notes/Pods-Reactant-Notes.release.xcconfig"; sourceTree = "<group>"; };
 		4614ABC6346420924414EB32 /* Pods_Reactant_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reactant_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 			children = (
 				OBJ_16 /* MainController.swift */,
 				OBJ_14 /* MainRootView.swift */,
+				0062516B1FABB18A000F6313 /* MainRootView.ui.xml */,
 				00610CDE1FAB1BE800291938 /* NoteCell.swift */,
 				OBJ_15 /* NoteCell.ui.xml */,
 			);
@@ -249,6 +252,7 @@
 			files = (
 				OBJ_45 /* Assets.xcassets in Resources */,
 				OBJ_46 /* LaunchScreen.storyboard in Resources */,
+				0062516C1FABB18A000F6313 /* MainRootView.ui.xml in Resources */,
 				OBJ_47 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

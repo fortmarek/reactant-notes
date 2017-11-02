@@ -1,12 +1,16 @@
 import Reactant
 
-final class MainRootView: PlainTableView<NoteCell> {
-    init() {
-        super.init()
+final class MainRootView: ViewBase<[Note], PlainTableViewAction<NoteCell>> {
+    let noteTableView = PlainTableView<NoteCell>(reloadable: false)
 
-        footerView = UIView() // this is so that cell dividers end after the last cell
-        rowHeight = NoteCell.height
-        separatorStyle = .singleLine
-        tableView.contentInset.bottom = 0
+    override func update() {
+        noteTableView.componentState = .items(componentState)
+    }
+
+    override func loadView() {
+        noteTableView.footerView = UIView() // this is so that cell dividers end after the last cell
+        noteTableView.rowHeight = NoteCell.height
+        noteTableView.separatorStyle = .singleLine
+        noteTableView.tableView.contentInset.bottom = 0
     }
 }

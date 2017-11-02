@@ -7,6 +7,20 @@
                         http://schema.reactant.tech/layout https://schema.reactant.tech/layout.xsd">
 
     <Label
-        text="Hello World!"
-        layout:center="super" />
+        field="title"
+        font="16"
+        numberOfLines="1"
+        lineBreakMode="byTruncatingTail"
+        layout:leading="super inset(6)"
+        layout:trailing="super inset(10)"
+        layout:top="super inset(6)" />
+
+    <Label
+        field="preview"
+        font="12"
+        numberOfLines="2"
+        lineBreakMode="byTruncatingTail"
+        layout:fillHorizontally="super inset(10)"
+        layout:top="super inset(6)"
+        layout:bottom=":gt super inset(6)" />
 </Component>
