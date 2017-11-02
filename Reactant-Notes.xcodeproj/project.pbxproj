@@ -54,6 +54,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00151DEF1FAB1629008ECACC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		00E342171FA39465005D3740 /* NewNote */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,13 +74,6 @@
 				00E3421B1FA3A2DA005D3740 /* Note.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		00E3421D1FA3A2DF005D3740 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		4CDB935950DDC63445F29873 /* Frameworks */ = {
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_12 /* Components */,
-				00E3421D1FA3A2DF005D3740 /* Services */,
+				00151DEF1FAB1629008ECACC /* Services */,
 				00E3421A1FA3A2CE005D3740 /* Models */,
 				OBJ_19 /* Styles */,
 				OBJ_21 /* Wireframes */,
