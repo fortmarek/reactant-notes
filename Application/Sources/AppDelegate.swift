@@ -1,5 +1,6 @@
 import UIKit
 import Reactant
+import ReactantLiveUI
 
 @UIApplicationMain
 class AppDelegate : UIResponder, UIApplicationDelegate {

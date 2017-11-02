@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00610CDF1FAB1BE800291938 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00610CDE1FAB1BE800291938 /* NoteCell.swift */; };
 		00E3421C1FA3A2DA005D3740 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3421B1FA3A2DA005D3740 /* Note.swift */; };
 		D03ACD43CBF966B1E344A647 /* Pods_Reactant_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4614ABC6346420924414EB32 /* Pods_Reactant_Notes.framework */; };
 		OBJ_37 /* GeneratedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* GeneratedUI.swift */; };
@@ -22,13 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00610CDE1FAB1BE800291938 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		00E3421B1FA3A2DA005D3740 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		1621E97C5ABE8F430218D12D /* Pods-Reactant-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reactant-Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reactant-Notes/Pods-Reactant-Notes.release.xcconfig"; sourceTree = "<group>"; };
 		4614ABC6346420924414EB32 /* Pods_Reactant_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reactant_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66B0BFBB9AC9D786CD93FDD /* Pods-Reactant-Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reactant-Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reactant-Notes/Pods-Reactant-Notes.debug.xcconfig"; sourceTree = "<group>"; };
 		OBJ_10 /* GeneratedUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedUI.swift; sourceTree = "<group>"; };
 		OBJ_14 /* MainRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRootView.swift; sourceTree = "<group>"; };
-		OBJ_15 /* MainRootView.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MainRootView.ui.xml; sourceTree = "<group>"; };
+		OBJ_15 /* NoteCell.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NoteCell.ui.xml; sourceTree = "<group>"; };
 		OBJ_16 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		OBJ_20 /* General.styles.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = General.styles.xml; sourceTree = "<group>"; };
 		OBJ_22 /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
@@ -122,7 +124,8 @@
 			children = (
 				OBJ_16 /* MainController.swift */,
 				OBJ_14 /* MainRootView.swift */,
-				OBJ_15 /* MainRootView.ui.xml */,
+				00610CDE1FAB1BE800291938 /* NoteCell.swift */,
+				OBJ_15 /* NoteCell.ui.xml */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				OBJ_40 /* MainWireframe.swift in Sources */,
 				00E3421C1FA3A2DA005D3740 /* Note.swift in Sources */,
 				OBJ_41 /* AppDelegate.swift in Sources */,
+				00610CDF1FAB1BE800291938 /* NoteCell.swift in Sources */,
 				OBJ_42 /* DependencyModule.swift in Sources */,
 				OBJ_43 /* ApplicationModule.swift in Sources */,
 			);
