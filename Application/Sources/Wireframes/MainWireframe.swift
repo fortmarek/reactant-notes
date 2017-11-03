@@ -15,7 +15,21 @@ final class MainWireframe: Wireframe {
 
     private func main() -> MainController {
         return create { provider in
-            return MainController()
+            let reactions = MainController.Reactions(
+                newNote: {
+                    provider.navigation?.push(controller: self.noteModification(note: nil))
+                },
+                modifyNote: { note in
+                    provider.navigation?.push(controller: self.noteModification(note: note))
+                })
+            return MainController(reactions: reactions)
+        }
+    }
+
+    private func noteModification(note: Note?) -> NoteModificationController {
+        return create { provider in
+            let properties = NoteModificationController.Properties(note: note)
+            return NoteModificationController(properties: properties)
         }
     }
 }

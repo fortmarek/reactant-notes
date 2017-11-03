@@ -7,8 +7,17 @@
     http://schema.reactant.tech/layout https://schema.reactant.tech/layout.xsd"
     rootView="true">
 
-    <View
-    field="noteTableView"
-    layout:fillVertically="super"
-    layout:fillHorizontally="super" />
+    <TextField
+        field="titleTextField"
+        font="bold@24"
+        placeholder="Title"
+        layout:fillHorizontally="super inset(24)"
+        layout:top="super inset(24)"/>
+
+    <TextView
+        field="bodyTextView"
+        font="16"
+        layout:fillHorizontally="super inset(20)"
+        layout:below="titleTextField offset(20)"
+        layout:bottom="super inset(24)" />
 </Component>

@@ -40,24 +40,14 @@ PODS:
 
 DEPENDENCIES:
   - Reactant (~> 1.0)
-  - ReactantLiveUI (from `https://github.com/Brightify/ReactantUI`, branch `san-andreas`)
-  - ReactantUI (from `https://github.com/Brightify/ReactantUI`, branch `san-andreas`)
+  - ReactantLiveUI (from `../ReactantUI`)
+  - ReactantUI (from `../ReactantUI`)
 
 EXTERNAL SOURCES:
   ReactantLiveUI:
-    :branch: san-andreas
-    :git: https://github.com/Brightify/ReactantUI
+    :path: ../ReactantUI
   ReactantUI:
-    :branch: san-andreas
-    :git: https://github.com/Brightify/ReactantUI
-
-CHECKOUT OPTIONS:
-  ReactantLiveUI:
-    :commit: 268c4e66f0e459103d77e79d5996779be131a7c8
-    :git: https://github.com/Brightify/ReactantUI
-  ReactantUI:
-    :commit: 268c4e66f0e459103d77e79d5996779be131a7c8
-    :git: https://github.com/Brightify/ReactantUI
+    :path: ../ReactantUI
 
 SPEC CHECKSUMS:
   Differentiator: ffe513ce1ea4e7198b89fac94d6e281c673055a9
@@ -71,6 +61,6 @@ SPEC CHECKSUMS:
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: facb4e2c8ad6539b39edd0822050865369267768
+PODFILE CHECKSUM: a225ece983aa8c36d8e967fe9b3738fa25ce789e
 
 COCOAPODS: 1.3.1

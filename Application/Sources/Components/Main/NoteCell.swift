@@ -1,7 +1,7 @@
 import Reactant
 import UIKit
 
-final class NoteCell: ViewBase<Note, Void> {
+final class NoteCell: ViewBase<Note, Void>, Reactant.TableViewCell {
     static let height: CGFloat = 80
 
     private let title = UILabel()
@@ -17,5 +17,24 @@ final class NoteCell: ViewBase<Note, Void> {
             title,
             preview
         )
+    }
+
+    func setHighlighted(_ highlighted: Bool, animated: Bool) {
+        let style = { self.apply(style: highlighted ? Styles.highlightedBackground : Styles.normalBackground) }
+        if animated {
+            UIView.animate(withDuration: 0.7, animations: style)
+        } else {
+            style()
+        }
+    }
+}
+
+extension NoteCell.Styles {
+    static func normalBackground(_ cell: NoteCell) {
+        cell.backgroundColor = nil
+    }
+
+    static func highlightedBackground(_ cell: NoteCell) {
+        cell.backgroundColor = UIColor.lightGray.withAlphaComponent(0.2)
     }
 }

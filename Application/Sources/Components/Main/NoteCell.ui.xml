@@ -4,23 +4,21 @@
     xmlns:layout="http://schema.reactant.tech/layout"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://schema.reactant.tech/ui https://schema.reactant.tech/ui.xsd
-                        http://schema.reactant.tech/layout https://schema.reactant.tech/layout.xsd">
+    http://schema.reactant.tech/layout https://schema.reactant.tech/layout.xsd">
 
     <Label
         field="title"
-        font="16"
+        font=":bold@20"
         numberOfLines="1"
-        lineBreakMode="byTruncatingTail"
-        layout:leading="super inset(6)"
-        layout:trailing="super inset(10)"
+        layout:leading="super inset(8)"
+        layout:trailing="super inset(8)"
         layout:top="super inset(6)" />
 
     <Label
         field="preview"
-        font="12"
+        font="14"
         numberOfLines="2"
-        lineBreakMode="byTruncatingTail"
         layout:fillHorizontally="super inset(10)"
-        layout:top="super inset(6)"
-        layout:bottom=":gt super inset(6)" />
+        layout:below="title offset(8)"
+        layout:bottom=":lt super inset(6)" />
 </Component>
