@@ -1,7 +1,7 @@
 import Reactant
 import UIKit
 
-final class NoteCell: ViewBase<Note, Void>, Reactant.TableViewCell {
+final class NoteCell: ViewBase<Note, Void> {
     static let height: CGFloat = 80
 
     private let title = UILabel()
