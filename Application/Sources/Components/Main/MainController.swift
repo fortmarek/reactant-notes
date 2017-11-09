@@ -1,27 +1,39 @@
 import Reactant
 
 final class MainController: ControllerBase<Void, MainRootView> {
+    struct Dependencies {
+        let noteService: NoteService
+    }
     struct Reactions {
         let newNote: () -> Void
         let modifyNote: (Note) -> Void
     }
 
+    private let dependencies: Dependencies
     private let reactions: Reactions
-    init(reactions: Reactions) {
+    
+    init(dependencies: Dependencies, reactions: Reactions) {
+        self.dependencies = dependencies
         self.reactions = reactions
         super.init(title: "RNotes")
     }
 
     override func afterInit() {
-        let notes = [
-            Note(id: UUID().uuidString, title: "Groceries", body: "Milk, honey, 2 lemons, 3 melons, a cat"),
-            Note(id: UUID().uuidString, title: "TODO", body: "Workout, take Casey on a date, workout some more"),
-            Note(id: UUID().uuidString, title: "Diary", body: "Today I found out that I'm gonna be promoted tomorrow! I'm so excited as I don't know what to expect from the new job position. Looking forward to it though.")
-        ]
-        rootView.componentState = notes
-
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "New", style: .plain) { [reactions] in
             reactions.newNote()
+        }
+
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Wipe", style: .plain) { [unowned self, dependencies] in
+            try? dependencies.noteService.deleteNotes()
+            self.invalidate()
+        }
+    }
+
+    override func update() {
+        do {
+            rootView.componentState = try dependencies.noteService.loadNotes()
+        } catch let error {
+            print("Failed to load saved notes:", error.localizedDescription)
         }
     }
 
@@ -32,5 +44,10 @@ final class MainController: ControllerBase<Void, MainRootView> {
         case .refresh, .rowAction(_, _):
             break
         }
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        invalidate()
+        super.viewWillAppear(animated)
     }
 }

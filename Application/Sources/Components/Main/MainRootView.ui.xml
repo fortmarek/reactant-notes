@@ -9,6 +9,5 @@
 
     <View
     field="noteTableView"
-    layout:fillVertically="super"
-    layout:fillHorizontally="super" />
+    layout:edges="super" />
 </Component>

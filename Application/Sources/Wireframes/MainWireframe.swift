@@ -15,6 +15,7 @@ final class MainWireframe: Wireframe {
 
     private func main() -> MainController {
         return create { provider in
+            let dependencies = MainController.Dependencies(noteService: module.noteService)
             let reactions = MainController.Reactions(
                 newNote: {
                     provider.navigation?.push(controller: self.noteModification(note: nil))
@@ -22,14 +23,16 @@ final class MainWireframe: Wireframe {
                 modifyNote: { note in
                     provider.navigation?.push(controller: self.noteModification(note: note))
                 })
-            return MainController(reactions: reactions)
+            return MainController(dependencies: dependencies, reactions: reactions)
         }
     }
 
     private func noteModification(note: Note?) -> NoteModificationController {
         return create { provider in
-            let properties = NoteModificationController.Properties(note: note)
-            return NoteModificationController(properties: properties)
+            let dependencies = NoteModificationController.Dependencies(noteService: module.noteService)
+            let properties = NoteModificationController.Properties(title: note?.title ?? "New Note")
+            return NoteModificationController(dependencies: dependencies, properties: properties)
+                .with(state: note ?? Note(id: UUID().uuidString, title: "", body: ""))
         }
     }
 }

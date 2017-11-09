@@ -1,7 +1,7 @@
 import Foundation
 
-struct Note {
+struct Note: Codable {
     let id: String
-    let title: String
-    let body: String
+    var title: String
+    var body: String
 }
