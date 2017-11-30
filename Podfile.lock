@@ -1,22 +1,22 @@
 PODS:
-  - Differentiator (3.0.1)
-  - Reactant (1.0.5):
-    - Reactant/Core (= 1.0.5)
-    - Reactant/Result (= 1.0.5)
-  - Reactant/Configuration (1.0.5):
+  - Differentiator (3.0.2)
+  - Reactant (1.0.6):
+    - Reactant/Core (= 1.0.6)
+    - Reactant/Result (= 1.0.6)
+  - Reactant/Configuration (1.0.6):
     - RxSwift (~> 4.0)
     - SnapKit (~> 4.0)
-  - Reactant/Core (1.0.5):
+  - Reactant/Core (1.0.6):
     - Reactant/Configuration
     - RxCocoa (~> 4.0)
     - RxOptional (~> 3.0)
     - RxSwift (~> 4.0)
     - SnapKit (~> 4.0)
-  - Reactant/Result (1.0.5):
+  - Reactant/Result (1.0.6):
     - Result (~> 3.0)
     - RxOptional (~> 3.0)
     - RxSwift (~> 4.0)
-  - Reactant/TableView (1.0.5):
+  - Reactant/TableView (1.0.6):
     - Reactant/Core
     - RxCocoa (~> 4.0)
     - RxDataSources (~> 3.0)
@@ -28,7 +28,7 @@ PODS:
   - Result (3.2.4)
   - RxCocoa (4.0.0):
     - RxSwift (~> 4.0)
-  - RxDataSources (3.0.1):
+  - RxDataSources (3.0.2):
     - Differentiator (~> 3.0)
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
@@ -40,27 +40,37 @@ PODS:
 
 DEPENDENCIES:
   - Reactant (~> 1.0)
-  - ReactantLiveUI (from `../ReactantUI`)
-  - ReactantUI (from `../ReactantUI`)
+  - ReactantLiveUI (from `https://github.com/Brightify/ReactantUI`, branch `san-andreas`)
+  - ReactantUI (from `https://github.com/Brightify/ReactantUI`, branch `san-andreas`)
 
 EXTERNAL SOURCES:
   ReactantLiveUI:
-    :path: ../ReactantUI
+    :branch: san-andreas
+    :git: https://github.com/Brightify/ReactantUI
   ReactantUI:
-    :path: ../ReactantUI
+    :branch: san-andreas
+    :git: https://github.com/Brightify/ReactantUI
+
+CHECKOUT OPTIONS:
+  ReactantLiveUI:
+    :commit: 24ce06e18b2583594535bb09194bbc9f1be8eb53
+    :git: https://github.com/Brightify/ReactantUI
+  ReactantUI:
+    :commit: 24ce06e18b2583594535bb09194bbc9f1be8eb53
+    :git: https://github.com/Brightify/ReactantUI
 
 SPEC CHECKSUMS:
-  Differentiator: ffe513ce1ea4e7198b89fac94d6e281c673055a9
-  Reactant: 9b1a738817e74bb95526245325b49c0bdcbd2b1d
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  Reactant: a41efb7cd8499b1571de61fb5ee74fbe3657aa30
   ReactantLiveUI: a9980993b7eca35bf392779a175cecf535d8a595
   ReactantUI: 6f9a041787d2d89f1b95e5adb19bb5ff6c0446e6
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
-  RxDataSources: 098b7e62b6316313b14d6bf594e3f4f4f62a238a
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxOptional: e5448d3e21024489e07c31f6a262f2b50c975367
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: a225ece983aa8c36d8e967fe9b3738fa25ce789e
+PODFILE CHECKSUM: fb7319187623754c148551b35975847dcea62d8d
 
 COCOAPODS: 1.3.1

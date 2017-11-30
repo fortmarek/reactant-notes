@@ -14,8 +14,8 @@
 		006251741FACC851000F6313 /* NoteModificationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006251731FACC851000F6313 /* NoteModificationRootView.swift */; };
 		006251761FACFE7E000F6313 /* NoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006251751FACFE7E000F6313 /* NoteService.swift */; };
 		00E3421C1FA3A2DA005D3740 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E3421B1FA3A2DA005D3740 /* Note.swift */; };
+		68D9FFB51FD0675400F9E444 /* GeneratedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D9FFB41FD0675400F9E444 /* GeneratedUI.swift */; };
 		D03ACD43CBF966B1E344A647 /* Pods_Reactant_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4614ABC6346420924414EB32 /* Pods_Reactant_Notes.framework */; };
-		OBJ_37 /* GeneratedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* GeneratedUI.swift */; };
 		OBJ_38 /* MainRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* MainRootView.swift */; };
 		OBJ_39 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* MainController.swift */; };
 		OBJ_40 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* MainWireframe.swift */; };
@@ -37,8 +37,8 @@
 		00E3421B1FA3A2DA005D3740 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		1621E97C5ABE8F430218D12D /* Pods-Reactant-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reactant-Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reactant-Notes/Pods-Reactant-Notes.release.xcconfig"; sourceTree = "<group>"; };
 		4614ABC6346420924414EB32 /* Pods_Reactant_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reactant_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68D9FFB41FD0675400F9E444 /* GeneratedUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GeneratedUI.swift; path = ../Generated/GeneratedUI.swift; sourceTree = "<group>"; };
 		A66B0BFBB9AC9D786CD93FDD /* Pods-Reactant-Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reactant-Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reactant-Notes/Pods-Reactant-Notes.debug.xcconfig"; sourceTree = "<group>"; };
-		OBJ_10 /* GeneratedUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratedUI.swift; sourceTree = "<group>"; };
 		OBJ_14 /* MainRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRootView.swift; sourceTree = "<group>"; };
 		OBJ_15 /* NoteCell.ui.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NoteCell.ui.xml; sourceTree = "<group>"; };
 		OBJ_16 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -98,6 +98,15 @@
 				4614ABC6346420924414EB32 /* Pods_Reactant_Notes.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68D9FFB31FD0674200F9E444 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				68D9FFB41FD0675400F9E444 /* GeneratedUI.swift */,
+			);
+			name = Generated;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		A43E65950B1B58DF8AC5423F /* Pods */ = {
@@ -193,19 +202,11 @@
 		OBJ_8 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* Generated */,
+				68D9FFB31FD0674200F9E444 /* Generated */,
 				OBJ_11 /* Sources */,
 				OBJ_26 /* Resources */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		OBJ_9 /* Generated */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_10 /* GeneratedUI.swift */,
-			);
-			path = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,7 +349,7 @@
 			name = "Run ReactantUI";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "pushd \"$SRCROOT/../ReactantUI\"\nenv -i HOME=\"$HOME\" PATH=\"$PATH\" swift build\npopd\ncd \"$SRCROOT/Application/Sources\"\n\"$SRCROOT/../ReactantUI/.build/debug/reactant-ui\" --enable-live > \"$SRCROOT/Application/Generated/GeneratedUI.swift\"";
+			shellScript = "pushd \"$PODS_ROOT/ReactantUI\"\nenv -i HOME=\"$HOME\" PATH=\"$PATH\" swift build\npopd\ncd \"$SRCROOT/Application/Sources\"\n\"$PODS_ROOT/ReactantUI/.build/debug/reactant-ui\" --enable-live > \"$SRCROOT/Application/Generated/GeneratedUI.swift\"\n\n#pushd \"$SRCROOT/../ReactantUI\"\n#env -i HOME=\"$HOME\" PATH=\"$PATH\" swift build\n#popd\n#cd \"$SRCROOT/Application/Sources\"\n#\"$SRCROOT/../ReactantUI/.build/debug/reactant-ui\" --enable-live > \"$SRCROOT/Application/Generated/GeneratedUI.swift\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -357,8 +358,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				68D9FFB51FD0675400F9E444 /* GeneratedUI.swift in Sources */,
 				006251721FACC844000F6313 /* NoteModificationController.swift in Sources */,
-				OBJ_37 /* GeneratedUI.swift in Sources */,
 				OBJ_38 /* MainRootView.swift in Sources */,
 				OBJ_39 /* MainController.swift in Sources */,
 				OBJ_40 /* MainWireframe.swift in Sources */,
