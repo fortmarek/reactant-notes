@@ -4,8 +4,8 @@ import UIKit
 final class NoteCell: ViewBase<Note, Void>, Reactant.TableViewCell {
     static let height: CGFloat = 80
 
-    private let title = UILabel()
-    private let preview = UILabel()
+    let title = UILabel()
+    let preview = UILabel()
 
     override func update() {
         title.text = componentState.title
