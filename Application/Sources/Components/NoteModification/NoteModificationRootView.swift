@@ -21,11 +21,4 @@ final class NoteModificationRootView: ViewBase<Note, NoteModificationAction> {
         titleTextField.text = componentState.title
         bodyTextView.text = componentState.body
     }
-
-    override func loadView() {
-        children(
-            titleTextField,
-            bodyTextView
-        )
-    }
 }

@@ -13,10 +13,6 @@ final class MainRootView: ViewBase<[Note], PlainTableViewAction<NoteCell>> {
     }
 
     override func loadView() {
-        children(
-            noteTableView
-        )
-
         noteTableView.footerView = UIView() // this is so that cell dividers end after the last cell
         noteTableView.rowHeight = NoteCell.height
         noteTableView.separatorStyle = .singleLine

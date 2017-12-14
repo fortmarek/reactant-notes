@@ -12,13 +12,6 @@ final class NoteCell: ViewBase<Note, Void>, Reactant.TableViewCell {
         preview.text = componentState.body
     }
 
-    override func loadView() {
-        children(
-            title,
-            preview
-        )
-    }
-
     func setHighlighted(_ highlighted: Bool, animated: Bool) {
         let style = { self.apply(style: highlighted ? Styles.highlightedBackground : Styles.normalBackground) }
         if animated {
