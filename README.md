@@ -1,7 +1,9 @@
 # RNotes
 ###### Keep all your important notes in one place. Then wipe them all!
+
 <br>
-This project shows off the **Reactant** architecture. This time creating a beautiful note taking application that saves your notes as long as you don't accidentally press the inconvenient `Wipe` button in the `NavigationBar`.
+
+This project shows off the **Reactant** architecture and its tutorial can be found [here](https://docs.reactant.tech/tutorials/RNotes/notes.html). This time creating a beautiful note taking application that saves your notes as long as you don't accidentally press the inconvenient `Wipe` button in the `NavigationBar`.
 
 <br><br>
 
