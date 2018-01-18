@@ -66,4 +66,5 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 Reactant-Notes.xcworkspace
-Application/Generated
+!Application/Generated/.gitkeep
+Application/Generated/*/
